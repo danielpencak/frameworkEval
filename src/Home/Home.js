@@ -23,6 +23,13 @@ class Home extends Component {
     this.fetchVueData();
   }
 
+  // componentWillUpdate() {
+  //   this.fetchReactData();
+  //   this.fetchAngularData();
+  //   this.fetchEmberData();
+  //   this.fetchVueData();
+  // }
+
   fetchReactData() {
     axios.get('https://api.github.com/repos/facebook/react')
       .then(({ data }) => {
@@ -66,10 +73,15 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <FrameworkCard react={ this.state.react }/>
-        <FrameworkCard angular={ this.state.angular } />
-        <FrameworkCard ember={ this.state.ember } />
-        <FrameworkCard vue={ this.state.vue } />
+        <div>
+          <h1>Framework Evaluator</h1>
+        </div>
+        <div className="cards">
+          <FrameworkCard frameworkData={ this.state.react }/>
+          <FrameworkCard frameworkData={ this.state.angular } />
+          <FrameworkCard frameworkData={ this.state.ember } />
+          <FrameworkCard frameworkData={ this.state.vue } />
+        </div>
       </div>
     );
   }
