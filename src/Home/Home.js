@@ -14,6 +14,7 @@ class Home extends Component {
     this.fetchAngularData = this.fetchAngularData.bind(this);
     this.fetchEmberData = this.fetchEmberData.bind(this);
     this.fetchVueData = this.fetchVueData.bind(this);
+    this.autoRefresh = this.autoRefresh.bind(this);
   }
 
   componentDidMount() {
@@ -23,12 +24,16 @@ class Home extends Component {
     this.fetchVueData();
   }
 
-  // componentWillUpdate() {
-  //   this.fetchReactData();
-  //   this.fetchAngularData();
-  //   this.fetchEmberData();
-  //   this.fetchVueData();
-  // }
+  autoRefresh() {
+      setInterval(this.componentDidMount(), 50);
+  }
+
+  componentDidUpdate() {
+    this.fetchReactData();
+    this.fetchAngularData();
+    this.fetchEmberData();
+    this.fetchVueData();
+  }
 
   fetchReactData() {
     axios.get('https://api.github.com/repos/facebook/react')
