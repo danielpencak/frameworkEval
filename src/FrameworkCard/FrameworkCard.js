@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable operator-linebreak */
+
 import './FrameworkCard.css';
-import reactLogo from './Assets/react.png';
-import vueLogo from './Assets/vue.png';
+import React from 'react';
 import angularLogo from './Assets/angular.png';
 import emberLogo from './Assets/ember.png';
+import reactLogo from './Assets/react.png';
+import vueLogo from './Assets/vue.png';
 
 export default function FrameworkCard(props) {
   return (
@@ -14,33 +17,33 @@ export default function FrameworkCard(props) {
           {
             props.frameworkData.name === 'vue' ?
             <div className="vue">
-              <img className="vueLogo" src={vueLogo} alt={"Vue"} />
+              <img className="vueLogo" src={ vueLogo } alt={ 'Vue' } />
             </div>
-            :null
+            : null
           }
           {
             props.frameworkData.name === 'ember.js' ?
             <div className="ember">
-              <img className="emberLogo" src={emberLogo} alt={"Ember"} />
+              <img className="emberLogo" src={ emberLogo } alt={ 'Ember' } />
             </div>
-            :null
+            : null
           }
           {
             props.frameworkData.name === 'react' ?
             <div className="react">
-              <img className="reactLogo" src={reactLogo} alt={"React"} />
+              <img className="reactLogo" src={ reactLogo } alt={ 'React' } />
             </div>
-            :null
+            : null
           }
           {
             props.frameworkData.name === 'angular.js' ?
             <div className="angular">
-              <img className="angularLogo" src={angularLogo} alt={"Angular"} />
+              <img className="angularLogo" src={ angularLogo } alt={ 'Angular' } />
             </div>
-            :null
+            : null
           }
         </div>
-        :null
+        : null
       }
       {
         props.frameworkData ?
@@ -50,7 +53,7 @@ export default function FrameworkCard(props) {
               Forks
             </p>
             <p>
-              {props.frameworkData.forks_count}
+              { props.frameworkData.forks_count }
             </p>
           </div>
           <div>
@@ -58,17 +61,17 @@ export default function FrameworkCard(props) {
               Stargazers
             </p>
             <p>
-              {props.frameworkData.stargazers_count}
+              { props.frameworkData.stargazers_count }
             </p>
           </div>
           <div>
             Open Issues
             <p>
-              {props.frameworkData.open_issues_count}
+              { props.frameworkData.open_issues_count }
             </p>
           </div>
         </div>
-        :null
+        : null
       }
     </div>
   );

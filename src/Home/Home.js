@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import FrameworkCard from '../FrameworkCard/FrameworkCard.js';
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+/* eslint-disable arrow-parens */
+
 import './Home.css';
+import React, { Component } from 'react';
+import FrameworkCard from '../FrameworkCard/FrameworkCard.js';
+import axios from 'axios';
 
 class Home extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-    }
+    this.state = {};
 
     this.fetchReactData = this.fetchReactData.bind(this);
     this.fetchAngularData = this.fetchAngularData.bind(this);
@@ -33,7 +36,7 @@ class Home extends Component {
   fetchReactData() {
     axios.get('https://api.github.com/repos/facebook/react')
       .then(({ data }) => {
-        this.setState({ react: data })
+        this.setState({ react: data });
       })
       .catch(err => {
         console.log(err);
@@ -43,7 +46,7 @@ class Home extends Component {
   fetchAngularData() {
     axios.get('https://api.github.com/repos/angular/angular.js')
       .then(({ data }) => {
-        this.setState({ angular: data })
+        this.setState({ angular: data });
       })
       .catch(err => {
         console.log(err);
@@ -53,7 +56,7 @@ class Home extends Component {
   fetchEmberData() {
     axios.get('https://api.github.com/repos/emberjs/ember.js')
       .then(({ data }) => {
-        this.setState({ ember: data })
+        this.setState({ ember: data });
       })
       .catch(err => {
         console.log(err);
@@ -63,7 +66,7 @@ class Home extends Component {
   fetchVueData() {
     axios.get('https://api.github.com/repos/vuejs/vue')
       .then(({ data }) => {
-        this.setState({ vue: data })
+        this.setState({ vue: data });
       })
       .catch(err => {
         console.log(err);

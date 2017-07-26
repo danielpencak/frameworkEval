@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
+
+import './App.css';
 import React, { Component } from 'react';
 import Home from '../Home/Home.js';
-import './App.css';
 
 class App extends Component {
   render() {
