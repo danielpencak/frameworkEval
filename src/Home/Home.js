@@ -77,7 +77,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <div>
-          <h1>Framework Evaluator</h1>
+          <h1 className="title">Framework Evaluator</h1>
         </div>
         <div className="cards">
           <FrameworkCard frameworkData={ this.state.react }/>

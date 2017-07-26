@@ -15,3 +15,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.Home .title {
+  font-size: 100px;
+  font-family: 'Rationale';
+  margin: 8% 0 5% 0;
+}

@@ -8,6 +8,8 @@
   padding: 10px;
   margin: 0 30px 0 30px;
   border: 1px solid black;
+  box-shadow: 1px 4px 5px #999;
+  background-color: #DDD;
 }
 
 .FrameworkCard .imageWrapper {
@@ -69,4 +71,13 @@
   justify-content: space-around;
   width: 100%;
   height: 80px;
+}
+
+.FrameworkCard .label {
+  font-size: 20px;
+}
+
+.FrameworkCard .data {
+  font-size: 18px;
+  text-align: center;
 }

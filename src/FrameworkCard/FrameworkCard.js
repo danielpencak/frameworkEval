@@ -49,24 +49,26 @@ export default function FrameworkCard(props) {
         props.frameworkData ?
         <div className="cardInfo">
           <div>
-            <p>
+            <p className="label">
               Forks
             </p>
-            <p>
+            <p className="data">
               { props.frameworkData.forks_count }
             </p>
           </div>
           <div>
-            <p>
+            <p className="label">
               Stargazers
             </p>
-            <p>
+            <p className="data">
               { props.frameworkData.stargazers_count }
             </p>
           </div>
           <div>
-            Open Issues
-            <p>
+            <p className="label">
+              Open Issues
+            </p>
+            <p className="data">
               { props.frameworkData.open_issues_count }
             </p>
           </div>
