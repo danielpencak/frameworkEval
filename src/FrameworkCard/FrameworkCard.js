@@ -17,28 +17,36 @@ export default function FrameworkCard(props) {
           {
             props.frameworkData.name === 'vue' ?
             <div className="vue">
-              <img className="vueLogo" src={ vueLogo } alt={ 'Vue' } />
+              <a className="link" href="https://github.com/vuejs/vue">
+                <img className="vueLogo" src={ vueLogo } alt={ 'Vue' } />
+              </a>
             </div>
             : null
           }
           {
             props.frameworkData.name === 'ember.js' ?
             <div className="ember">
-              <img className="emberLogo" src={ emberLogo } alt={ 'Ember' } />
+              <a className="link" href="https://github.com/emberjs/ember.js/">
+                <img className="emberLogo" src={ emberLogo } alt={ 'Ember' } />
+              </a>
             </div>
             : null
           }
           {
             props.frameworkData.name === 'react' ?
             <div className="react">
-              <img className="reactLogo" src={ reactLogo } alt={ 'React' } />
+              <a className="link" href="https://github.com/facebook/react">
+                <img className="reactLogo" src={ reactLogo } alt={ 'React' } />
+              </a>
             </div>
             : null
           }
           {
             props.frameworkData.name === 'angular.js' ?
             <div className="angular">
-              <img className="angularLogo" src={ angularLogo } alt={ 'Angular' } />
+              <a className="link" href="https://github.com/angular/angular.js">
+                <img className="angularLogo" src={ angularLogo } alt={ 'Angular' } />
+              </a>
             </div>
             : null
           }

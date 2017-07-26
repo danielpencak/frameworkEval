@@ -81,3 +81,9 @@
   font-size: 18px;
   text-align: center;
 }
+
+.FrameworkCard .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

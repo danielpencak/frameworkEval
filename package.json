@@ -13,8 +13,8 @@
     "react-dom": "^15.6.1"
   },
   "engines": {
-  "node": "8.2.1"
-},
+    "node": "8.2.1"
+  },
   "scripts": {
     "start": "react-scripts start & nodemon --watch server/ server/bin/www",
     "build": "react-scripts build",
