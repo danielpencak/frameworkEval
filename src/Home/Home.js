@@ -14,7 +14,6 @@ class Home extends Component {
     this.fetchAngularData = this.fetchAngularData.bind(this);
     this.fetchEmberData = this.fetchEmberData.bind(this);
     this.fetchVueData = this.fetchVueData.bind(this);
-    this.autoRefresh = this.autoRefresh.bind(this);
   }
 
   componentDidMount() {
@@ -24,15 +23,11 @@ class Home extends Component {
     this.fetchVueData();
   }
 
-  autoRefresh() {
-      setInterval(this.componentDidMount(), 50);
-  }
-
   componentDidUpdate() {
-    this.fetchReactData();
-    this.fetchAngularData();
-    this.fetchEmberData();
-    this.fetchVueData();
+    setTimeout(this.fetchReactData, 900000);
+    setTimeout(this.fetchAngularData, 900000);
+    setTimeout(this.fetchEmberData, 900000);
+    setTimeout(this.fetchVueData, 900000);
   }
 
   fetchReactData() {
