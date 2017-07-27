@@ -5,7 +5,7 @@ Created by: Daniel Pencak
 
 Framework Evaluator allows the user to compare various GitHub data for four different JavaScript frameworks.
 
-# What problem does it solve?
+## What problem does it solve?
 
 I'd like an application that will allow me to compare different JavaScript frameworks based on data from GitHub.
 
